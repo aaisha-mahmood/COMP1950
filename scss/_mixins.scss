@@ -1,0 +1,11 @@
+
+@mixin link-style{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: $heading-font;
+}
+
+@mixin margin-center{
+    margin-right: auto;
+    margin-left: auto;
+}

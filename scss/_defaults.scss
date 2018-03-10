@@ -1,0 +1,17 @@
+
+html {
+    box-sizing: border-box; }
+  
+  *, *:before, *:after {
+    box-sizing: inherit; }
+
+body{
+    background-color: $bg-color;
+    margin: 0;
+}
+
+.wrapper{
+    max-width: 90%;
+    background-color: white;
+    @include margin-center;
+}

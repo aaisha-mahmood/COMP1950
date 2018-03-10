@@ -1,0 +1,33 @@
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/images/banner-small.jpg");
+    background-position-x: right;
+    background-repeat: no-repeat;   
+    height: auto;
+}
+
+.logo{
+    width: 140px;
+    height: 140px;
+    border-right: $bdr-style; 
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 62, 107);
+    margin: 0;
+    border-top: $bdr-style;
+    li{
+        display: block;
+        margin: 20px;
+    }
+}
+
+header nav ul li a{
+    @include link-style;
+    color: white;
+}
