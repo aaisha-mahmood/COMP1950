@@ -14,4 +14,8 @@ body{
     max-width: 90%;
     background-color: white;
     @include margin-center;
+
+    @media screen and (max-width: 680px) {
+        max-width: 100%;     
+    }
 }

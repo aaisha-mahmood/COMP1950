@@ -7,4 +7,5 @@ footer{
 footer a{
     @include link-style;
     margin-right: 20px;
+    color: $footer-link-color;
 }
