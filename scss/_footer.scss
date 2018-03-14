@@ -1,11 +1,14 @@
 
 footer{
     display: flex;
-    justify-content: center; 
+    justify-content: space-around; 
+    background-color: $footer-bg-color;
+    height: auto;
+    padding: 0 25%;
 }
 
 footer a{
     @include link-style;
-    margin-right: 20px;
     color: $footer-link-color;
+    padding: 8px 20px;
 }
