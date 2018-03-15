@@ -38,11 +38,16 @@ header{
     border-right: $bdr-style; 
 }
 
+button.menu {
+    display: none;
+}
+
 nav ul{
     display: flex;
     justify-content: center;
     background-color: $nav-color;
     margin: 0;
+    padding: 0;
     border-top: $bdr-style;
     li{
         display: block;
@@ -55,6 +60,7 @@ nav ul{
     >:hover, >:active, >:focus{
         background-color: lighten($color: $nav-color, $amount: 10%);
     }
+
 }
 
 nav ul li a{
@@ -62,3 +68,129 @@ nav ul li a{
     color: white;
 }
 
+@media screen and (max-width: 580px){
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    button.menu {
+        display: block;
+        width: 40px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-top: -20px;
+        margin-right: 50px;
+    }
+    
+    button.menu .button-content {
+        height: 24px;
+    }
+    
+    button.menu .text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+    
+    button.menu .bar {
+        display: block;
+        height: 4px;
+        background-color: $nav-color;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    button.menu .bar:before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        top: 10px;
+        left: 0;
+        background-color: $nav-color;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    button.menu .bar:after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        top: -10px;
+        left: 0;
+        background-color: $nav-color;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    button.menu:focus,
+    .button-content:focus {
+        outline: none;
+    }
+    
+    button.menu:focus .button-content {
+        outline: 5px solid #7683C9;
+    }
+    
+    .show button.menu .bar {
+		background-color: transparent;	
+	}
+	
+	.show button.menu .bar:before {
+		top: 0;
+		transform: rotate(45deg);	
+	}
+	
+	.show button.menu .bar:after {
+		top: 0;
+		transform: rotate(-45deg);	
+	}
+    
+    nav {
+        display: none;
+        overflow: hidden;
+        width: 100vw;
+        background-color: $nav-color;
+        transition: height 0.3s ease;
+        //border-top: $bdr-style;
+    }
+    
+    .show nav {
+        height: auto;
+        display: block;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .show nav li {
+        width: 100%;
+        text-align: center;
+        border-bottom: $bdr-style;
+        border-left: none;
+    }
+    
+    nav a {
+        border-right: none;
+        color: white;
+        border-bottom: none;
+        line-height: 40px;
+    }
+    
+    nav a:hover,
+    nav a:active,
+    nav a:focus {
+        background-color: rgba(255,255,255, 0.3);
+    }
+}
