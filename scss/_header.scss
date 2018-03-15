@@ -49,6 +49,7 @@ nav ul{
     margin: 0;
     padding: 0;
     border-top: $bdr-style;
+    @include heading-link;    
     li{
         display: block;
         padding: 10px 20px;
@@ -61,11 +62,6 @@ nav ul{
         background-color: lighten($color: $nav-color, $amount: 10%);
     }
 
-}
-
-nav ul li a{
-    @include link-style;
-    color: white;
 }
 
 @media screen and (max-width: 580px){
@@ -102,7 +98,7 @@ nav ul li a{
     
     button.menu .bar {
         display: block;
-        height: 4px;
+        height: 6px;
         background-color: $nav-color;
         width: 100%;
         position: relative;
@@ -113,7 +109,7 @@ nav ul li a{
     button.menu .bar:before {
         content: "";
         width: 100%;
-        height: 4px;
+        height: 6px;
         top: 10px;
         left: 0;
         background-color: $nav-color;
@@ -124,7 +120,7 @@ nav ul li a{
     button.menu .bar:after {
         content: "";
         width: 100%;
-        height: 4px;
+        height: 6px;
         top: -10px;
         left: 0;
         background-color: $nav-color;
@@ -135,10 +131,6 @@ nav ul li a{
     button.menu:focus,
     .button-content:focus {
         outline: none;
-    }
-    
-    button.menu:focus .button-content {
-        outline: 5px solid #7683C9;
     }
     
     .show button.menu .bar {
@@ -161,7 +153,6 @@ nav ul li a{
         width: 100vw;
         background-color: $nav-color;
         transition: height 0.3s ease;
-        //border-top: $bdr-style;
     }
     
     .show nav {

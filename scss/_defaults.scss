@@ -8,6 +8,7 @@ html {
 body{
     background-color: $bg-color;
     margin: 0;
+    overflow: auto;
 }
 
 .wrapper{
@@ -27,4 +28,6 @@ body{
 main{
     flex: 1;
     font-family: $content-font;
+    @include content-link;
+    @include content-link-hover;
 }
