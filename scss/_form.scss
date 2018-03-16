@@ -1,3 +1,80 @@
 form{
-    margin: 50px;
+    margin: 50px auto;
+    border: 1px solid #CCCBCB;
+    padding: 20px;  
+    width: 80%;
+}
+
+input[type=text], input[type=email], textarea{
+    border: 1px solid $nav-color;
+    padding: 0 8px;
+    width: 300px;
+    &::placeholder{
+        color: transparent;
+    }
+}
+
+input[type=submit]{
+    background-color: $link-hover-color;
+    border: none;
+    color: $text-color-light;
+    font-weight: bold;
+    padding: 8px 5px;
+    margin: 2% 1% 1% 30%;
+    cursor: pointer;
+    border-radius: 25px;
+    @media screen and (max-width:440px){
+        margin: 2% 1% 1% 10%;
+    }
+}
+
+input[type=reset]{
+    background-color: $content-link-color;
+    border: none;
+    color: $text-color-light;
+    font-weight: bold;
+    padding: 8px 5px;
+    margin: 2% 1% 1% 4%;
+    cursor: pointr;
+    border-radius: 25px;    
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+    box-shadow: 2px 2px 5px #4E4949; 
+}
+
+.formrow{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 35%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    
+    @media screen and (max-width: 950px){
+        padding-right: 20%;
+    }
+
+    @media screen and (max-width: 780px){
+        padding-right: 1%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    label{
+        display: none;
+    }
+
+    input[type=text], input[type=email], textarea{
+        border: 1px solid $nav-color;
+        padding: 0 8px;
+        width: 100%;
+        line-height: 30px;
+
+        &::placeholder{
+            font-family: $content-font;
+            color: lighten($color: $text-color-dark, $amount: 35%);
+        }
+    }
+
 }

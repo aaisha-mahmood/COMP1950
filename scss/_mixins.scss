@@ -29,7 +29,7 @@
 
 @mixin content-link-hover{
     a:hover{
-        color: lighten($color: #314c13, $amount: 15%);
+        color: $link-hover-color;
         text-decoration: underline;
         font-weight: bold;
         font-family: $content-font;

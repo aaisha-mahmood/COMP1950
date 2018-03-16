@@ -30,4 +30,7 @@ main{
     font-family: $content-font;
     @include content-link;
     @include content-link-hover;
+    section{
+        margin: 5% 8%;
+    }
 }
