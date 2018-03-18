@@ -11,6 +11,15 @@ body{
     overflow: auto;
 }
 
+h1, h2, h3, h4{
+    font-family: $heading-font;
+    color: $nav-color;
+}
+
+h1{
+    text-align: center;
+}
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -31,6 +40,6 @@ main{
     @include content-link;
     @include content-link-hover;
     section{
-        margin: 5% 8%;
+        margin: 3% 8%;
     }
 }
