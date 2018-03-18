@@ -1,0 +1,26 @@
+.lessons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lessons-list{
+    display: flex;
+    flex-direction: column;
+    background-color: $nav-color;
+    justify-content: space-evenly;
+    @include heading-link;
+    @include flatten;
+    padding: 0 5%;
+    a:hover{
+        text-decoration: underline;
+        color: $text-color-light;
+        font-family: $heading-font;
+        font-weight: bold;
+    }
+    a{
+        width: 85px;
+    }
+
+    border-bottom: $bdr-style;
+    border-top: $bdr-style;
+}

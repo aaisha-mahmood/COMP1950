@@ -216,153 +216,187 @@
     The capabilities of these browser tools go well beyond outlining, examining and editing. They provide deep troubleshooting capabilities of the HTTP network, javascript and even XHR (XMLHttpRequest).
 </section>
 <section>
-    <h2 id="standards">Standards:</h2> W3C
+    <h2 id="standards">Standards:</h2> 
+    Just as those who manufacture physical goods are expected to follow the <a href="http://www.iso.org/">International Organization for Standards (ISO)</a>, web developers are expected to adhere to the standards described by the <a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a>
 
-Just as those who manufacture physical goods are expected to follow the International Organization for Standards (ISO), web developers are expected to adhere to the standards described by the World Wide Web Consortium (W3C)
+    <h3>W3C: World Wide Web Consortium</h3>
+    <ul>
+        <li>Web standards have gone through the same process that the ISO went through</li>
+        <li>Many companies see the benefits of interoperability - a few are still "forging their own"</li>
+        <li>Many companies have standards: Adobe, Microsoft, Apple, Ford, GM</li>
+        <li>Many are proprietary standards, and are not supported by other companies</li>
+        <li>W3C - World Wide Web Consortium: founded by Tim Berners-Lee to try and uniformly put forward standards through a single communication vehicle</li>
+        <li>Leading browser makers did not follow, initially</li>
+        <li>Designers were 'taking sides' in the browser wars: users were losers</li>
+        <li>Most modern browsers are fairly standards compliant</li>
+    </ul>
 
-W3C: World Wide Web Consortium
+    <h4>W3C Goals:</h4>
+    <ol>
+        <li><strong>Universal Access:</strong> To make the Web accessible to all by promoting technologies that take into account the vast differences in culture, languages, education, ability, material resources, access devices, and physical limitations of users on all continents.</li>
+        <li><strong>Semantic Web:</strong> To develop a software environment that permits each user to make the best use of the resources available on the Web.</li>
+        <li><strong>Web of Trust:</strong> To guide the Web's development with careful consideration for the novel legal, commercial, and social issues raised by this technology.</li>
+    </ol>
+    
+    <h4>Why web developers should follow W3C standards?</h4>
+    <ul>
+        <li>Your pages will be viewable in the largest number of browsers.</li>
+        <li>Increase interoperability with other clients (search engines, screen readers)</li>
+        <li>Web sites will gracefully degrade as support for CSS or other presentation layers are absent.</li>
+        <li>Code that doesn't follow standards cannot be expected to behave predictably in the various web browsers.</li>
+        <li>Non-standard code is hard to support.</li>
+        <li>Re-engineering and/or maintaining poorly coded websites can be very difficult, costly and time consuming.</li>
+    </ul>
 
-Web standards have gone through the same process that the ISO went through
-Many companies see the benefits of interoperability - a few are still "forging their own"
-Many companies have standards: Adobe, Microsoft, Apple, Ford, GM
-Many are proprietary standards, and are not supported by other companies
-W3C - World Wide Web Consortium: founded by Tim Berners-Lee to try and uniformly put forward standards through a single communication vehicle
-Leading browser makers did not follow, initially
-Designers were 'taking sides' in the browser wars: users were losers
-Most modern browsers are fairly standards compliant
-W3C Goals
+    <h4>Discussion:</h4>
+    <ul>
+        <li>What is the current W3C recommended version for HTML?</li>
+        <li>What is the current W3C recommended version for CSS?</li>
+        <li>What are the consequences of using a non-standard version?</li>
+    </ul>
 
-Universal Access: To make the Web accessible to all by promoting technologies that take into account the vast differences in culture, languages, education, ability, material resources, access devices, and physical limitations of users on all continents;
-Semantic Web: To develop a software environment that permits each user to make the best use of the resources available on the Web;
-Web of Trust: To guide the Web's development with careful consideration for the novel legal, commercial, and social issues raised by this technology.
-Why web developers should follow W3C standards:
+    Learn more about the W3C and standards based development from the <a href="http://www.webstandards.org/learn/faq/">Web Standards Project</a>.
 
-Your pages will be viewable in the largest number of browsers
-Increase interoperability with other clients (search engines, screen readers)
-Web sites will gracefully degrade as support for CSS or other presentation layers are absent.
-Code that doesn't follow standards cannot be expected to behave predictably in the various web browsers
-Non standard code is hard to support
-Re-engineering and/or maintaining poorly coded websites can be very difficult, costly and time consuming
-Discussion:
+    <h3>Web Development:</h3>
+    Three goals of standards-driven web development:
 
-What is the current W3C recommended version for HTML?
-What is the current W3C recommended version for CSS?
-What are the consequences of using a non-standard version?
-Learn more abou the W3C and standards based devlopment from the Web Standards Project.
+    <ol>
+        <li><strong>Compatibility</strong> (creating web pages that work well in all browsers)</li>
+        <li><strong>Portability</strong> (writing code that works well in any computing environment/operating system)</li>
+        <li><strong>Accessibility</strong> (produce web pages that are optimized for search engines, screen readers, etc)</li>
+    </ol>
 
-Standards: Web Development
+    <h4>Requirements</h4>
+    <ul>
+        <li>HTML + CSS + DOM = Agile Web Sites</li>
+        <li>Structurally valid HTML code (e.g: tags that open are closed. parent-child tag relationships are valid, etc)</li>
+        <li>Logically valid HTML code (e.g: ids are not applied more than once per page)</li>
+        <li>Syntactically valid CSS code</li>
+        <li>Use external CSS to develop sites that separate content (HTML) from presentation (CSS)</li>
+        <li>Using Semantic Markup to establish content relationships and logical deployment of content</li>
+        <li>Use a single codebase (no browser sniffing, forked code)</li>
+        <li>Consider special needs users with screen readers. A common browser used with screen reader software is <a href="http://www.webbie.org.uk/">Webbie</a></li>
+    </ul>
 
-Three goals of standards-driven web development:
+    <h3>File and Folder Naming:</h3>
+    HTTP URLs cannot contain certain characters, and certain characters will cause unwanted effects and behaviours when used in a URL. Follow best practices for all file and folder names:
+    <ul>
+        <li>File and folder names should <strong>NOT</strong> contain:</li>
+        <ul>
+            <li>Capital letters</li>
+            <li>Spaces</li>
+            <li>Special characters: <strong>! @ # $ % ^ & * ( ) + { } [ ] : ; " < > ? |</strong> etc...</li>
+        </ul>
+            <li>Acceptable non-alphanumeric characters: <strong>. _ - ~</strong></li>
+            <li>Filenames should either be descriptive of the file contents, or use the default page name: <strong>index.htm, index.html or index.shtml</strong> (or whatever your server default is)</li>
+            <li>Folder names should always be descriptive. Folder structure should be logical (e.g:<strong> /hockey/nhl/canucks</strong>).</li>
+        </ul>
+    <h3>File Management:</h3>
+        <ul>
+            <li>Including an <strong>index.html</strong> file in every folder on your server will ensure users cannot go snooping around your filesystem. the index.html file can be a blank HTML page if you like, as long as the user does not see a list of files when they request a folder.</li>
+            <li>Browser caching can reduce excessive request/response transactions between client and server. however, some browsers may cache things like the CSS, so if the styles have changed since caching the client may not get the latest styles.</li>
+            <ul>
+                <li><strong>Ctrl + F5</strong> (<strong>Cmd + F5</strong> for Mac) will force a page reload. Very useful when developing on a localhost http server.</li>
+                <li>If a file name has changed, the browser will have to make a new request from the server. versioning your file names will ensure users always have the latest version of any file (for example <strong>styles_1.0.css, styles_1.1.css, styles_1.2.css, styles_2.0.css</strong> etc.)</li>
+            </ul>
+            <li>If there are files/pages on your server no longer being used, be sure to either remove them or locate them in a place where users are not going to accidentally find them.</li>
+        </ul>
+    
+    <h3>Code Style and Organization:</h3>
+    In COMP1950 students are expected to present a readable, well organized code style:
+    <ul>
+        <li>
+            <p>Comment <strong>all code</strong> with your name (or nickname if you prefer). Do this for all text based files (<strong>.html, .css, .js, .php,</strong> etc.)</p>
+            <img src="images/lesson01/css_commenting.png" alt="Example of CSS commenting">
+        </li>
+        <li>
+            <p>In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.</p>
+            <img src="images/lesson01/html_structure.png" alt="Example HTML structure">
+        </li>
+        <li>
+            <p>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your .html files as well. </p>
+            <img src="images/lesson01/folder_structure.png" alt="Example folder structure">
+        </li>
+        <li>Use the <strong>.html</strong> extension for all HTML files (not <strong>.htm)</strong>. Use the typical extension for all other text based files.</li>
+        <li>Write structurally valid HTML code: <a href="http://validator.w3.org/">W3C HTML validator</a></li>
+        <li>Write syntactically valid CSS code: <a href="http://jigsaw.w3.org/css-validator/">W3C CSS validator</a></li>
+        <li>Include a referer link on all your HTML pages: <a href="http://validator.w3.org/check?uri=referer">validate</a></li>
+    </ul>
+        
+    <h3>Semantic Markup</h3>
+    Highly <a href="https://html.com/semantic-markup/">semantic HTML content</a> is crucial for usability, accessibilty and search engine optimization.
 
-Compatibility (creating web pages that work well in all browsers)
-Portability (writing code that works well in any computing environment/operating system)
-Accessibility (produce web pages that are optimized for search engines, screen readers, etc)
-Requirements
+    <h4>What is Semantic Markup?</h4>
+    <ul>
+        <li>The practice of organizing your content into a structured hierarchy</li>
+        <li>Using appropriate tags to explain and describe the content</li>
+        <li>H1 ... 6 tags for summary headings</li>
+        <li>UL tags for unsorted, unranked, related points</li>
+        <li>OL tags for sorted, ranked, related points</li>
+        <li>Paragraph tags instead of double BR tags</li>
+        <li>HTML tables used for semantic value (tabular data), not for layouts</li>
+        <li><strong>IMPORTANT:</strong> Separate Content (HTML) from Presentation (CSS)</li>
+    </ul>
 
-HTML + CSS + DOM = Agile Web Sites
-Structurally valid HTML code (eg: tags that open are closed. parent-child tag relationships are valid, etc)
-Logically valid HTML code (eg: ids are not applied more than once per page)
-Syntactically valid CSS code
-Use external CSS to develop sites that separate content (HTML) from presentation (CSS)
-Using Semantic Markup to establish content relationships and logical deployment of content
-Use a single codebase (no browser sniffing, forked code)
-Consider special needs users with screen readers. A common browser used with screen reader software is Webbie
-Standards: File and Folder Naming
+    <h4>Building Content Relationships:</h4>
+    <ul>
+        <li>Use appropriate tags for headings, content, sub-content, lists</li>
+        <li>This builds a relationship that descends from the title of the page</li>
+        <li>Each section is a discrete piece of information</li>
+        <li>Headings summarize the following content</li>
+        <li>Citations, quotes, code samples can be contextualized by nearest heading</li>
+    </ul>
 
-HTTP urls cannot contain certain characters, and certain characters will cause unwanted effects and behaviours when used in a url. Follow best practices for all file and folder names:
+    <h4>Logical vs. Physical Styles:</h4>
+    <ul>
+        <li>Tend to display identically in browsers, but are fundamentally different</li>
+        <li>Physical styles define what content looks like</li>
+        <li>Logical styles define what the content is</li>
+        <li>Logical styles are important for screen readers, physical styles are not</li>
+        <li>Given a choice, logical styles are usually preferred</li>
+        <li>Some physical styles:</li>
+            <ul>
+                <li><strong>b</strong> - Bold</li>
+                <li><strong>i</strong> - Italic</li>
+                <li><strong>s</strong> - Strikethrough</li>
+                <li><strong>u</strong> - Underline</li>
+            </ul>
+        </ul>
 
-File and folder names should NOT contain:
-Capital letters
-Spaces
-Special characters: ! @ # $ % ^ & * ( ) + { } [ ] : ; " < > ? | etc...
-Acceptable non-alphanumeric characters: . _ - ~
-Filenames should either be descriptive of the file contents, or use the default page name: index.htm, index.html or index.shtml (or whatever your server default is)
-Folder names should always be descriptive. Folder structure should be logical (eg: /hockey/nhl/canucks).
-Standards: File Management
+    <h4>Logical Styling:</h4>
+    <ul>
+        <li>Best way to markup content for long-term usage</li>
+        <li>Use CSS to change style (and some behaviour)</li>
+        <li>Use DOM to change behaviour (via scripting)</li>
+        <li>Requires thinking ahead</li>
+        <li>Examples of logical styles:</li>
+            <ul>
+                <li><strong>strong</strong> - Increase importance</li>
+                <li><strong>em</strong> - Add Emphasis</li>
+                <li><strong>code</strong> - Code sample</li>
+                <li><strong>kbd</strong> - Keyboard entry</li>
+                <li><strong>samp</strong> - Programming sample</li>
+                <li><strong>var</strong> - Variable</li>
+                <li><strong>cite</strong> - Citation</li>
+                <li><strong>dfn</strong> - Definition</li>
+                <li><strong>abbr</strong> - Abbreviation</li>
+                <li><strong>acronym</strong> - Acronym</li>
+                <li><strong>del</strong> - Deleted text</li>
+                <li><strong>ins</strong> - Inserted text</li>
+            </ul>
+        </ul>
 
-Including an index.html file in every folder on your server will ensure users cannot go snooping around your filesystem. the index.html file can be a blank HTML page if you like, as long as the user does not see a list of files when they request a folder
-Browser caching can reduce excessive request/response transactions between client and server. however, some browsers may cache things like the CSS, so if the styles have changed since caching the client may not get the latest styles.
-Ctrl + F5 (Cmd + F5 for Mac) will force a page reload. Very useful when developing on a localhost http server.
-If a file name has changed, the browser will have to make a new request from the server. versioning your file names will ensure users always have the latest version of any file (for example styles_1.0.css, styles_1.1.css, styles_1.2.css, styles_2.0.css etc)
-If there are files/pages on your server no longer being used, be sure to either remove them or locate them in a place where users are not going to accidentally find them
-Standards: Code Style and Organization
-
-In COMP1950 students are expected to present a readable, well organized code style:
-
-Comment all code with your name (or nickname if you prefer). Do this for all text based files (.html, .css, .js, .php, etc)
-Example of HTML commenting
-Example of CSS commenting
-In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.
-Example folder structure
-Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your .html files as well. 
-Example folder structure
-Use the .html extension for all HTML files (not .htm). Use the typical extension for all other text based files.
-Write structurally valid HTML code: W3C HTML validator
-Write syntactically valid CSS code: W3C CSS validator
-Include a referer link on all your HTML pages: 
-<a href="http://validator.w3.org/check?uri=referer">validate</a>
-Semantic Markup
-
-Highly semantic HTML content is crucial for usability, accessibilty and search engine optimization.
-
-What is Semantic Markup?
-
-The practice of organizing your content into a structured hierarchy
-Using appropriate tags to explain and describe the content
-H1 ... 6 tags for summary headings
-UL tags for unsorted, unranked, related points
-OL tags for sorted, ranked, related points
-Paragraph tags instead of double BR tags
-HTML tables used for semantic value (tabular data), not for layouts
-IMPORTANT: Separate Content (HTML) from Presentation (CSS)
-Building Content Relationships
-
-Use appropriate tags for headings, content, sub-content, lists
-This builds a relationship that descends from the title of the page
-Each section is a discrete piece of information
-Headings summarize the following content
-Citations, quotes, code samples can be contextualized by nearest heading
-Logical vs. Physical Styles
-
-Tend to display identically in browsers, but are fundamentally different
-Physical styles define what content looks like
-Logical styles define what content is
-Logical styles are important for screen readers, physical styles are not
-Given a choice, logical styles are usually preferred
-Some physical styles:
-b - Bold
-i - Italic
-s - Strikethrough
-u - Underline
-Logical Styling
-
-Best way to markup content for long-term usage
-Use CSS to change style (and some behaviour)
-Use DOM to change behaviour (via scripting)
-Requires thinking ahead
-Examples of logical styles:
-strong - Increase importance
-em - Add Emphasis
-code - Code sample
-kbd - Keyboard entry
-samp - Programming sample
-var - Variable
-cite - Citation
-dfn - Definition
-abbr - Abbreviation
-acronym - Acronym
-del - Deleted text
-ins - Inserted text
-Key Advantages Of Semantic Content
-
-Content is relational - context can be determined easily
-Extracting important pieces of information is simple (CITE or CODE tags for example)
-Search engine optimization (SEO)
-Syndication
-Big win for frameworks such as jQuery
-Screen reader friendly
-Increased Accessibility
-Separating style (CSS) from structure (HTML), makes it easier to maintain
+    <h4>Key Advantages of Semantic Content:</h4>
+    <ul>
+        <li>Content is relational - context can be determined easily</li>
+        <li>Extracting important pieces of information is simple (CITE or CODE tags for example)</li>
+        <li>Search engine optimization (SEO)</li>
+        <li>Syndication</li>
+        <li>Big win for frameworks such as jQuery</li>
+        <li>Screen reader friendly</li>
+        <li>Increased Accessibility</li>
+        <li>Separating style (CSS) from structure (HTML), makes it easier to maintain</li>
+    </ul>
 </section>
 <section>
     <h2 id="todo">To Do</h2>
