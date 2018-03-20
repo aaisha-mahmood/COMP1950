@@ -46,13 +46,14 @@ nav ul{
     display: flex;
     justify-content: center;
     background-color: $nav-color;
+    height: 40px;
     margin: 0;
     padding: 0;
     border-top: $bdr-style;
     @include heading-link;    
     li{
         display: block;
-        padding: 10px 20px;
+        padding: 10px 0;
         border-left: $bdr-style;
         ~ :last-child{
             border-right: $bdr-style;
@@ -60,6 +61,10 @@ nav ul{
     }
     >:hover, >:active, >:focus{
         background-color: lighten($color: $nav-color, $amount: 10%);
+    }
+
+    li a{
+        padding: 10px 20px;
     }
 
 }
