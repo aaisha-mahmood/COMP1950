@@ -1,29 +1,51 @@
 .lessons{
-    display: flex;
-    justify-content: space-between;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(6, 2fr);
+   margin-top: 70px;
 }
 
-.lessons-list{
-    display: flex;
-    flex-direction: column;
-    background-color: $nav-color;
-    justify-content: space-evenly;
-    @include heading-link;
-    @include flatten;
-    padding: 0 5%;
-    a:hover{
-        text-decoration: underline;
-        color: $text-color-light;
-        font-family: $heading-font;
-        font-weight: bold;
-    }
+.lesson{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    @include margin-center;
+    margin-top: 30px;
     a{
-        width: 85px;
+        color: $nav-color;
+        width: 100%;
+        background: linear-gradient(to right, rgb(214, 176, 127),$bg-color, rgb(214, 176, 127));
+        padding: 1% 20%;
+        border-radius: 50px;    
+        height: 100%;
+        font-weight: bold;
+        font-family: $heading-font;
+        box-shadow: 2px 2px 5px grey;
     }
 
-    border-bottom: $bdr-style;
-    border-top: $bdr-style;
+    a:hover{
+        background: burlywood;
+        color: $nav-color;
+        font-weight: bold;
+        font-family: $heading-font;
+    }
+    
 }
+
+.lesson-01{grid-column: 1; grid-row: 1;}
+.lesson-02{grid-column: 2; grid-row: 1;}
+.lesson-03{grid-column: 1; grid-row: 2;}
+.lesson-04{grid-column: 2; grid-row: 2;}
+.lesson-05{grid-column: 1; grid-row: 3;}
+.lesson-06{grid-column: 2; grid-row: 3;}
+.lesson-07{grid-column: 1; grid-row: 4;}
+.lesson-08{grid-column: 2; grid-row: 4;}
+.lesson-09{grid-column: 1; grid-row: 5;}
+.lesson-10{grid-column: 2; grid-row: 5;}
+.lesson-11{grid-column: 1; grid-row: 6;}
+.lesson-12{grid-column: 2; grid-row: 6;}
+
 
 .lesson-img{
     max-width: 100%;
