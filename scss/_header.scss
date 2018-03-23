@@ -178,16 +178,12 @@ nav ul{
         border-left: none;
     }
     
-    nav a {
+    .show nav li a {
         border-right: none;
         color: white;
         border-bottom: none;
         line-height: 40px;
+        padding: 10px 35%;
     }
-    
-    nav a:hover,
-    nav a:active,
-    nav a:focus {
-        background-color: rgba(255,255,255, 0.3);
-    }
+ 
 }
