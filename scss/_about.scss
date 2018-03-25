@@ -55,4 +55,10 @@ td {
 .about-button:hover {
     background-color: rgb(93, 163, 17);
     transition-duration: 0.4s;
+    color: white;
+}
+
+.about-button:visited {
+    color: white;
+    background: $nav-color;
 }
