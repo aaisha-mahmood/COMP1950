@@ -1,4 +1,17 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+}
 
+.about-list{
+    display: flex;
+    flex-direction: column;
+    background-color: $nav-color;
+    justify-content: space-evenly;
+    @include heading-link;
+    @include flatten;
+    padding: 10px 3%;
+    
     a:hover{
         text-decoration: underline;
         color: $text-color-light;
@@ -9,6 +22,9 @@
         width: 85px;
     }
 
+    border-bottom: $bdr-style;
+    border-top: $bdr-style;
+}
 
 table, th, td {
     border: 1px solid black;
