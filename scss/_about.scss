@@ -28,11 +28,15 @@
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    height:20px;
-    padding: 30px;
+    padding: 11px;
 }
 
 th {
-   background-color: rgb(5, 85, 143);
+   background-color: rgb(3, 110, 187);
    color: $text-color-light;
+   font-family: $heading-font;
+}
+
+td {
+    text-align: left;
 }
