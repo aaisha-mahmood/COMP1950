@@ -26,7 +26,12 @@
 }
 
 table, th, td {
-    border: 1px solid rgba(243, 237, 205, 0.5);
+    border: 1px solid black;
     border-collapse: collapse;
     height:20px;
+    padding: 30px;
+}
+
+th {
+   background-color: rgba(243, 237, 205, 0.5);
 }
