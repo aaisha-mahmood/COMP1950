@@ -33,5 +33,6 @@ table, th, td {
 }
 
 th {
-   background-color: rgba(243, 237, 205, 0.5);
+   background-color:$nav-color;
+   text-decoration-color: $bg-color;
 }
