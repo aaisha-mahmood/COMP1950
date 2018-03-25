@@ -41,8 +41,13 @@ td {
     text-align: left;
 }
 
-.about-img{
-    max-width: 100%;
-    height: auto;
-    margin: 10px;
+.about-button {
+    background-color: $link-hover-color;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
