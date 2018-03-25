@@ -26,6 +26,7 @@
 }
 
 table, th, td {
+    display: flex;
     border: 1px solid black;
     border-collapse: collapse;
     padding: 11px;
