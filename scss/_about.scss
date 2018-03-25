@@ -25,8 +25,7 @@
     border-top: $bdr-style;
 }
 
-table{
-    border: 2px $nav-color;
-    font-family: $content-font;
-
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
