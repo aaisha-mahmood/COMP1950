@@ -1,0 +1,98 @@
+
+
+.table-course{
+
+    overflow-x:auto;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin:0 auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    
+    }
+
+
+th {
+    background-color: $nav-color;
+    color: $footer-link-color ;
+    height: 100px;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+   
+    
+}
+
+
+td{
+    height: 50px;
+    vertical-align: center;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+
+
+section h2{
+
+    @include title-h2;
+   
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.thick-line{
+
+    @include title-hr;
+}
+
+
+
+//Media Query 
+
+@media screen and (max-width: 900px){
+
+    table {
+
+        margin-top:10%;
+        margin-bottom:10%;
+        width:90%;
+        
+    }
+
+
+
+}
+
+@media screen and (max-width: 680px){
+
+    table {
+
+        width:100%;
+    }
+
+
+    section h2{
+        font-size: 2em;
+
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    margin-top:20%;
+    margin-bottom:20%;
+
+
+    table {
+
+        width:100%;
+    }
+
+}
+
+
