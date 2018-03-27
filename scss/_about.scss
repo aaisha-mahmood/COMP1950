@@ -18,6 +18,7 @@
         font-family: $heading-font;
         font-weight: bold;
     }
+
     a{
         width: 85px;
     }
@@ -33,7 +34,7 @@ table, th, td {
 }
 
 th {
-   background-color: rgb(3, 110, 187);
+   background-color: $nav-color;
    color: $text-color-light;
    font-family: $heading-font;
    padding: 11px;
