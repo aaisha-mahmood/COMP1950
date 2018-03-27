@@ -1,0 +1,363 @@
+
+// Main area 
+
+//-----------------------------------------------------------
+
+// Main area 
+
+
+.banner .header-image1{
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-content{
+    position: absolute;
+    bottom: 30%;
+    animation: slideIn 1s 0.5s 1 ease both;
+
+/* banner  Animation Keyframes */
+@keyframes slideIn {
+    from {
+        right: -100%;
+        opacity: 0;
+        visibility: visible;
+        }
+      
+    to {
+        right: 20%;
+        opacity: 1;
+        }
+    }
+
+    .title{
+        font-family: $heading-font;
+        font-weight: 600;
+        font-size: 7em;
+        text-transform: uppercase;
+        color:$bg-color;
+        
+        text-shadow: 1px 1px 5px black;
+    }
+
+    .sub-title{
+        font-family: $subtitle-font;
+        font-weight: 700;
+        font-size:4em;
+        letter-spacing: 3px;
+        color:$content-link-color;
+        text-shadow: 2px 2px 5px white, 1px 1px 5px black;
+        text-align: right;
+
+    }
+
+    @media screen and (max-width: 1400px) {
+        bottom: 8%;
+        @keyframes slideIn {
+            from {
+                right: -100%;
+                opacity: 0;
+                }
+              
+            to {
+                right: 10%;
+                opacity: 1;
+                }
+            }
+    }
+
+    @media screen and (max-width: 1060px) {
+        bottom: 15%;
+        @keyframes slideIn {
+            from {
+                right: -100%;
+                opacity: 0;
+                }
+              
+            to {
+                right: 8%;
+                opacity: 1;
+                }
+            }
+
+            .title{
+                font-size: 6em;
+            }
+
+            .sub-title{
+                font-size: 3.5em;
+            }
+    }
+
+    @media screen and (max-width: 920px) {
+        bottom: 20%;
+        @keyframes slideIn {
+            from {
+                right: -100%;
+                opacity: 0;
+                }
+              
+            to {
+                right: 8%;
+                opacity: 1;
+                }
+            }
+
+            .title{
+                font-size: 5em;
+            }
+
+            .sub-title{
+                font-size: 3em;
+            }
+    }
+
+    @media screen and (max-width: 740px) {
+        bottom: 35%;
+        @keyframes slideIn {
+            from {
+                right: -100%;
+                opacity: 0;
+                }
+              
+            to {
+                right: 5%;
+                opacity: 1;
+                }
+            }
+
+            .title{
+                font-size: 4.5em;
+            }
+
+            .sub-title{
+                font-size: 2.5em;
+            }
+    }
+    @media screen and (max-width: 650px) {
+        bottom: 30%;
+        @keyframes slideIn {
+            from {
+                right: -100%;
+                opacity: 0;
+                }
+              
+            to {
+                right: 8%;
+                opacity: 1;
+                }
+            }
+
+            .title{
+                font-size: 4em;
+            }
+
+            .sub-title{
+                font-size: 2em;
+            }
+    }
+
+    @media screen and (max-width: 580px) {
+        bottom: 35%;
+        @keyframes slideIn {
+            from {
+                right: -100%;
+                opacity: 0;
+                }
+              
+            to {
+                right: 5%;
+                opacity: 1;
+                }
+            }
+
+            .title{
+                font-size: 3.5em;
+            }
+
+            .sub-title{
+                font-size: 2em;
+            }
+
+    }
+    @media screen and (max-width: 520px) {
+        bottom: 40%;
+        @keyframes slideIn {
+            from {
+                right: -100%;
+                opacity: 0;
+                }
+              
+            to {
+                right: 4%;
+                opacity: 1;
+                }
+            }
+
+            .title{
+                font-size: 3em;
+            }
+
+            .sub-title{
+                font-size: 1.5em;
+            }
+    }
+    @media screen and (max-width: 440px){
+        bottom: 45%;
+        .title{
+            font-size: 2.5em;
+        }
+    }
+
+    @media screen and (max-width: 380px){
+        bottom: 55%;
+        .title{
+            font-size: 2em;
+        }
+    }
+}
+
+@media screen and (max-width: 580px){
+    .show .banner-content{
+        top: 550px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .show .banner-content{
+        top: 520px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .show .banner-content{
+        top: 500px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .show .banner-content{
+        top: 480px;
+    }
+}
+
+ // -1- Section Code 
+.about-section {
+
+    @include margin-center;
+    padding: 4%;
+    width:70%;
+    text-align: center;
+    top:-40px;
+    position: relative;
+    background-color: rgba(75, 117, 29,0.8);
+    padding-bottom:100px;
+}
+
+ .about-section h2{
+
+    @include title-h2;
+    padding-top:20px;
+ }
+
+.thick-line{
+
+    @include title-hr;
+}
+
+main h2{
+
+    font-family: $heading-font;
+    font-weight: 700;
+    line-height: 1.2em;
+
+}
+
+.main-content{
+
+    font-weight: 400;
+    line-height: 1.2em;
+    font-size: 1.4em;
+    color:darkslategray;
+
+}
+
+.main-content2{
+
+    padding:1%;
+    color:gray;
+    font-weight: 400;
+    line-height: 1em;
+    font-size: 1.2em;
+    color:$footer-link-color;
+    background-color:gray;
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    .about-section h2{
+
+        font-size:1.6em;
+    }
+
+    .main-content{
+        font-size: 1em;
+        
+
+    }
+    .main-content2{
+        font-size: 1em;
+
+    }
+
+    .about-section{
+
+        //position: relative;
+        top:-50px;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 900px){
+   
+    .about-section{
+        position: relative;
+        top:-40px;
+
+    }   
+
+
+}
+
+@media screen and (max-width: 680px){
+
+    .about-section{
+
+        position: relative;
+        top:-40px;
+
+    }
+
+    .main-content2{
+        font-size: 0.8em;
+
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about-section{
+
+        position: relative;
+        top:-27px;
+
+    }
+    .main-content2{
+        font-size: 0.7em;
+
+    }
+  
+
+}

@@ -35,3 +35,23 @@
         font-family: $content-font;
     }
 }
+
+@mixin title-h2{
+
+    font-size: 2.3em;
+    font-weight: 700;
+    font-family:$heading-font;
+    line-height: 1.3em;
+    color:$deepblue;
+   
+}
+
+@mixin title-hr{
+    display: block;
+    color: $deepblue;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-style: solid;
+    border-width: 2px;
+    width:70px;
+}

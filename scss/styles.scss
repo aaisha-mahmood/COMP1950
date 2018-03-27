@@ -8,7 +8,9 @@
 @import 'defaults'; 
 
 /*--Import Header Styles-- */
+@import 'index-header';
 @import 'header';
+@import 'index-main';
 
 /* --Import Lessons Styles-- */
 @import 'lessons';
