@@ -15,7 +15,7 @@ table {
     border-collapse: collapse;
     width: 80%;
     margin:0 auto;
-    margin-top:5%;
+    //margin-top:5%;
     margin-bottom:5%;
     
     }
@@ -39,19 +39,6 @@ td{
 }
 
 tr:nth-child(even){background-color: #f2f2f2}
-
-
-main h2{
-
-    @include title-h2;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.thick-line{
-
-    @include title-hr;
-}
 
 
 

@@ -28,7 +28,7 @@
 }
 
 @mixin content-link-hover{
-    a:hover{
+    a:hover, a:active, a:focus{
         color: $link-hover-color;
         text-decoration: underline;
         font-weight: bold;
