@@ -12,11 +12,17 @@
 @import 'header';
 @import 'index-main';
 
+/* --Import Schedule Styles-- */
+@import 'index';
+
 /* --Import Lessons Styles-- */
 @import 'lessons';
 
 /* --Import About Styles-- */
 @import 'about';
+
+/* --Import Schedule Styles-- */
+@import 'schedule';
 
 /* --Impport SiteMap Styles-- */
 @import 'sitemap';
@@ -27,4 +33,3 @@
 /* --Import Footer Styles-- */
 @import 'footer';
 
-@import 'schedule';
