@@ -8,6 +8,16 @@
 
 .index-wrapper{
     background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    @include margin-center;
+
+    @media screen and (max-width: 680px) {
+        max-width: 100%;     
+    }
+    min-height: 100vh;
 }
 
 .banner .header-image1{
@@ -252,7 +262,7 @@
     padding: 4%;
     width:70%;
     text-align: center;
-    top:-40px;
+    top:-60px;
     position: relative;
     background-color: rgba(75, 117, 29,0.8);
     padding-bottom:100px;
@@ -264,9 +274,10 @@
     padding-top:20px;
  }
 
-.thick-line{
+.index-wrapper .thick-line{
 
     @include title-hr;
+    color: $bg-color;
 }
 
 main h2{
@@ -282,19 +293,19 @@ main h2{
     font-weight: 400;
     line-height: 1.2em;
     font-size: 1.4em;
-    color:darkslategray;
-
+    color: $bg-color;
+    text-align: center;
 }
 
 .main-content2{
 
     padding:1%;
-    color:gray;
     font-weight: 400;
     line-height: 1em;
     font-size: 1.2em;
     color:$footer-link-color;
     background-color:gray;
+    text-align: center;
 }
 
 @media screen and (max-width: 1024px) {

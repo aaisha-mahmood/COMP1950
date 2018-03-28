@@ -1,9 +1,10 @@
 
-footer{
+footer ul{
     display: flex;
     justify-content: space-around; 
     background-color: $footer-bg-color;
     height: auto;
     padding: 10px 15%;
     @include heading-link;
+    list-style: none;
 }
