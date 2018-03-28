@@ -59,8 +59,8 @@
         font-weight: 700;
         font-size:4em;
         letter-spacing: 3px;
-        color:$content-link-color;
-        text-shadow: 2px 2px 5px white, 1px 1px 5px black;
+        color: $index-bg-color;
+        text-shadow: 1px 2px 2px white, 1px 1px 5px black;
         text-align: right;
 
     }
@@ -81,7 +81,7 @@
     }
 
     @media screen and (max-width: 1060px) {
-        bottom: 15%;
+        bottom: 5%;
         @keyframes slideIn {
             from {
                 right: -100%;
@@ -104,7 +104,7 @@
     }
 
     @media screen and (max-width: 920px) {
-        bottom: 20%;
+        bottom: 10%;
         @keyframes slideIn {
             from {
                 right: -100%;
@@ -127,7 +127,7 @@
     }
 
     @media screen and (max-width: 740px) {
-        bottom: 35%;
+        bottom: 20%;
         @keyframes slideIn {
             from {
                 right: -100%;
@@ -233,25 +233,25 @@
 
 @media screen and (max-width: 580px){
     .show .banner-content{
-        top: 550px;
+        top: 600px;
     }
 }
 
 @media screen and (max-width: 470px){
     .show .banner-content{
-        top: 520px;
+        top: 575px;
     }
 }
 
 @media screen and (max-width: 430px){
     .show .banner-content{
-        top: 500px;
+        top: 560px;
     }
 }
 
 @media screen and (max-width: 360px){
     .show .banner-content{
-        top: 480px;
+        top: 550px;
     }
 }
 
@@ -262,10 +262,12 @@
     padding: 4%;
     width:70%;
     text-align: center;
-    top:-60px;
+    top: -40px;
     position: relative;
-    background-color: rgba(75, 117, 29,0.8);
+    background-color: rgba($index-bg-color, 0.8);
     padding-bottom:100px;
+    margin-top:0;
+    margin-bottom:0;
 }
 
  .about-section h2{
@@ -280,7 +282,7 @@
     color: $bg-color;
 }
 
-main h2{
+.index-wrapper main h2{
 
     font-family: $heading-font;
     font-weight: 700;

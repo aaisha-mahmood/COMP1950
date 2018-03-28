@@ -4,7 +4,7 @@ header.index-header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(75, 117, 29, 0.5);
+    background-color: $index-bg-color;
     background-image: none;   
     height: auto;
     nav{
@@ -69,21 +69,21 @@ nav ul{
         justify-content: space-between;
     }
     
-    button.menu {
+    .index-header button.menu {
         display: block;
         width: 40px;
         background-color: transparent;
         border: none;
         padding: 0;
-        margin-top: -20px;
-        margin-right: 50px;
+        margin-top: -10px;
+        margin-right: 0;
     }
     
-    button.menu .button-content {
+   .index-header button.menu .button-content {
         height: 24px;
     }
     
-    button.menu .text {
+    .index-header button.menu .text {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -94,34 +94,34 @@ nav ul{
         border: 0;
     }
     
-    button.menu .bar {
+    .index-header button.menu .bar {
         display: block;
         height: 6px;
-        background-color: $nav-color;
+        background-color: $bg-color;
         width: 100%;
         position: relative;
         top: 10px;
         transition: all 0.3s ease-in-out;
     }
     
-    button.menu .bar:before {
+    .index-header button.menu .bar:before {
         content: "";
         width: 100%;
         height: 6px;
         top: 10px;
         left: 0;
-        background-color: $nav-color;
+        background-color: $bg-color;
         position: absolute;
         transition: all 0.3s ease-in-out;
     }
     
-    button.menu .bar:after {
+    .index-header button.menu .bar:after {
         content: "";
         width: 100%;
         height: 6px;
         top: -10px;
         left: 0;
-        background-color: $nav-color;
+        background-color: $bg-color;
         position: absolute;
         transition: all 0.3s ease-in-out;
     }
