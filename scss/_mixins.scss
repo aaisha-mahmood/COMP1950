@@ -55,3 +55,81 @@
     border-width: 2px;
     width:70px;
 }
+
+
+// Rania code
+
+
+// Visually Hide
+@mixin hide {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+// Center elements in a flex
+// container
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+//Banner code 
+@mixin banner{
+
+    .header-image1{
+        width:100;
+        position: relative;
+        color:white;
+    }
+   
+
+    
+    .position  {
+        width:100%;
+        position: absolute;
+        
+    }
+
+    .header-image2{
+        
+        top: 11%;
+        
+    }
+
+ 
+} 
+
+@mixin title-hr{
+    display: block;
+    color: $deepblue;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-style: solid;
+    border-width: 2px;
+    width:70px;
+}
+  
+@mixin title-h2{
+
+    font-size: 2.3em;
+    font-weight: 700;
+    font-family:$heading-font;
+    line-height: 1.3em;
+    color:$deepblue;
+   
+}
+
+
+
+//end Rania code @mixin heading-link{
+   
