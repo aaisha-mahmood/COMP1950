@@ -1,10 +1,5 @@
 
 
-.table-course{
-
-    overflow-x:auto;
-}
-
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -43,11 +38,12 @@ td{
 
 //Media Query 
 @media screen and (max-width: 600px) {
-   .schedule-table table {
+   .responsive-table table {
       border: 0;
+      width: 100%;
     }
 
-   .schedule-table table thead {
+   .responsive-table table thead {
       border: none;
       clip: rect(0 0 0 0);
       height: 1px;
@@ -58,24 +54,24 @@ td{
       position: absolute;
       width: 1px;
     }
-    .schedule-table table tr {
+    .responsive-table table tr {
       border-bottom: 1px solid #000;
       display: block;
       margin-bottom: .625em;
     }
-   .schedule-table table td {
+   .responsive-table table td {
       border-bottom: 1px solid #ddd;
       display: block;
       font-size: .8em;
       text-align: right;
     }
-    .schedule-table table td:before {
+    .responsive-table table td:before {
       content: attr(data-label);
       float: left;
       font-weight: bold;
       text-transform: uppercase;
     }
-    .schedule-table table td:last-child {
+    .responsive-table table td:last-child {
       border-bottom: 0;
     }
   }
