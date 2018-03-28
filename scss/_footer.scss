@@ -4,9 +4,35 @@ footer ul{
     justify-content: space-around; 
     background-color: $footer-bg-color;
     height: auto;
-    padding: 10px 15%;
+    padding: 10px 0;
     @include heading-link;
     list-style: none;
     margin-bottom: 0;
+
+    @media screen and (max-width: 580px){
+        flex-wrap: wrap;
+    
+        li{
+            padding: 10px 50px;
+        }
+    }
+
+    @media screen and (max-width: 440px){
+        li{
+            padding: 10px 50px;
+        }
+    }
+
+    @media screen and (max-width: 360px){
+        li{
+            padding: 10px 45px;
+        }
+    }
+
 }
 
+@media screen and (max-width: 640px){
+    footer ul a{
+        font-size: 0.8em;
+    }
+}
