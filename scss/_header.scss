@@ -67,6 +67,12 @@ nav ul{
         padding: 10px 20px;
     }
 
+    @media screen and (max-width: 650px){
+        li a{
+            padding: 10px 12px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 580px){
