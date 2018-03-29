@@ -3,34 +3,14 @@
     justify-content: space-between;
 }
 
-.about-list{
-    display: flex;
-    flex-direction: column;
-    background-color: $nav-color;
-    justify-content: space-evenly;
-    @include heading-link;
-    @include flatten;
-    padding: 10px 3%;
-    
-    a:hover{
-        text-decoration: underline;
-        color: $text-color-light;
-        font-family: $heading-font;
-        font-weight: bold;
-    }
-
-    a{
-        width: 85px;
-    }
-
-    border-bottom: $bdr-style;
-    border-top: $bdr-style;
-}
-
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+table{
+    width: 100%;
 }
 
 th {
@@ -44,57 +24,68 @@ td {
     text-align: left;
     padding: 11px;
     font-size: 16px;
+    width: 50%;
 }
 
+
+.responsive-table td {
+    text-align: left;
+    padding: 11px;
+    font-size: 16px;
+    width: auto;
+}
+
+
 tr:nth-child(odd){
-    background-color: #f2f2f2;
+    background-color: lighten($nav-color, 75%);
 }
 
 .about-button {
     background-color: $link-hover-color;
     border: none;
-    color: white;
+    color: $text-color-light;
     padding: 8px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    margin-left: 39%;
-    margin-bottom:30px;
+    border-radius: 25px ;
+
+    @media screen and (max-width: 580px){
+        font-size: 14px;
+    }
+}
+
+.btn-container{
+    text-align: center;
+    max-width: 100%;
 }
 
 .about-button:hover {
     background-color: rgb(93, 163, 17);
     transition-duration: 0.4s;
     color: white;
+    box-shadow: 1px 1px 5px #000;
 }
 
-.p1 {
-    font-family: $content-font;
-    font-size: 19px;
-    text-align: center;
-    margin-top: 17%;
-    padding: 50px;
-    
+.carousel-container{
+    width: 100%;
+    background-color:white;
+    background-image:
+    radial-gradient(midnightblue 9px, transparent 10px),        
+    repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);    
+    background-size: 30px 30px, 90px 90px; 
+    background-position: 0 0;
+    margin:0;
+    padding: 30px 50px;
 }
 
-.about-outcome { 
-    text-align: center;
-
-}
 
 .fotorama {
     margin: 0 auto;
+    width: 100%;
 }
 
 .fotorama__wrap {
     margin: 0 auto;
-}
-
-main a {
-    color: white;
-}
-
-main a:visited {
-    color: red;
 }
 
