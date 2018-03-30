@@ -54,8 +54,7 @@
         font-size: 7em;
         text-transform: uppercase;
         color:$bg-color;
-        
-        text-shadow: 1px 1px 5px black;
+        text-shadow: 3px 3px 3px black;
     }
 
     .sub-title{
@@ -103,7 +102,7 @@
             }
 
             .sub-title{
-                font-size: 3.5em;
+                font-size: 3.3em;
             }
     }
 
@@ -126,7 +125,7 @@
             }
 
             .sub-title{
-                font-size: 3em;
+                font-size: 2.8em;
             }
     }
 
@@ -190,7 +189,7 @@
             }
 
             .title{
-                font-size: 3.5em;
+                font-size: 3.8em;
             }
 
             .sub-title{
@@ -222,15 +221,15 @@
     }
     @media screen and (max-width: 440px){
         bottom: 45%;
-        .title{
-            font-size: 2.5em;
-        }
     }
 
     @media screen and (max-width: 380px){
         bottom: 55%;
         .title{
-            font-size: 2em;
+            font-size: 2.2em;
+        }
+        .sub-title{
+            font-size: 1.1em;
         }
     }
 }
