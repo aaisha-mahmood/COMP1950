@@ -3,32 +3,32 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("/images/banner-small.jpg");
+    background-image: url("images/banner-small.jpg");
     background-repeat:no-repeat;
     background-position: top right;    
     height: auto;
     @media screen and (max-width: 960px){
-        background-image: url("/images/banner-900px.jpg");
+        background-image: url("images/banner-900px.jpg");
     }
 
     @media screen and (max-width: 800px){
-        background-image: url("/images/banner-800px.jpg");
+        background-image: url("images/banner-800px.jpg");
     }
 
     @media screen and (max-width: 680px){
-        background-image: url("/images/banner-680px.jpg");
+        background-image: url("images/banner-680px.jpg");
     }
 
     @media screen and (max-width: 580px){
-        background-image: url("/images/banner-580px.jpg");
+        background-image: url("images/banner-580px.jpg");
     }
 
     @media screen and (max-width: 440px){
-        background-image: url("/images/banner-440px.jpg");
+        background-image: url("images/banner-440px.jpg");
     }
 
     @media screen and (max-width: 380px){
-        background-image: url("/images/banner-380px.jpg");
+        background-image: url("images/banner-380px.jpg");
     }
 }
 
