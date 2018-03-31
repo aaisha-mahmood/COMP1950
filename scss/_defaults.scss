@@ -46,5 +46,6 @@ main{
     @include content-link-hover;
     section{
         margin: 3% 8%;
+        overflow-wrap: break-word;
     }
 }

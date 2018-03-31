@@ -13,14 +13,21 @@ header.index-header{
         margin: 0;
         padding:0;
 
-        @media screen and (max-width: 680px){
+        @media screen and (max-width: 770px){
             max-width: 100%;
-            nav ul{
+            .index-header nav ul{
                 justify-content: space-around;
             }
             li a{
-                padding: 10px 5px;
+                padding: 10px 10px;
                 font-size: 0.9em;
+            }
+
+            @media screen and (max-width: 610px){
+               li a{
+                    padding: 10px 8px;
+                    font-size: 0.9em;
+                }
             }
         }
     }
@@ -130,14 +137,14 @@ header.index-header{
         height: auto;
     }
     
-    .show nav li {
+    .show .index-header nav li {
         width: 100%;
         text-align: center;
         border-bottom: $bdr-style;
         border-left: none;
     }
     
-    .show nav li a {
+    .show .index-header nav li a {
         border-right: none;
         color: white;
         border-bottom: none;
