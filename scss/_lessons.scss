@@ -30,6 +30,13 @@
         font-weight: bold;
         font-family: $heading-font;
     }
+
+    @media screen and (max-width: 380px){
+        a{
+            padding: 1% 15%;
+            font-size: 0.9em;
+        }
+    }
     
 }
 
