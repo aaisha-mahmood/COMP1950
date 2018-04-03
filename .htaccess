@@ -1,0 +1,23 @@
+#cache image files for one year
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+	Header set Cache-Control "max-age=31536000, public”
+</filesMatch>
+
+#cache css and js files for one month
+<filesMatch ".(css|js)$">
+	Header set Cache-Control "max-age=2628000, public”
+</filesMatch>
+
+#cache html files for 1 day
+<filesMatch ".(html)$">
+	Header set Cache-Control "max-age=86400, public”
+</filesMatch>
+
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+# END GZIP
+
+# disable directory listing
+Options -Indexes
