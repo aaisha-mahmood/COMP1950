@@ -42,7 +42,7 @@ button.menu {
     display: none;
 }
 
-nav ul{
+header nav ul{
     display: flex;
     justify-content: center;
     background-color: $nav-color;
@@ -158,7 +158,7 @@ nav ul{
 		transform: rotate(-45deg);	
 	}
     
-    nav {
+    header nav {
         display: none;
         overflow: hidden;
         width: 100vw;
@@ -166,25 +166,25 @@ nav ul{
         transition: height 0.3s ease;
     }
     
-    .show nav {
+    .show header nav {
         height: auto;
         display: block;
     }
     
-    nav ul {
+    header nav ul {
         flex-direction: column;
         width: 100%;
         height: auto;
     }
     
-    .show nav li {
+    .show header nav li {
         width: 100%;
         text-align: center;
         border-bottom: $bdr-style;
         border-left: none;
     }
     
-    .show nav li a {
+    .show header nav li a {
         border-right: none;
         color: white;
         border-bottom: none;

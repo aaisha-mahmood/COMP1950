@@ -1,5 +1,5 @@
 
-footer ul{
+footer nav ul{
     display: flex;
     justify-content: space-around; 
     background-color: $footer-bg-color;
@@ -8,6 +8,10 @@ footer ul{
     @include heading-link;
     list-style: none;
     margin-bottom: 0;
+    border: none;
+    li{
+        border: none;
+    }
 
     @media screen and (max-width: 580px){
         flex-wrap: wrap;

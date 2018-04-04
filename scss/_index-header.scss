@@ -119,7 +119,7 @@ header.index-header{
 		transform: rotate(-45deg);	
 	}
     
-    nav {
+    .index-header nav {
         display: none;
         overflow: hidden;
         width: 100vw;
@@ -127,12 +127,12 @@ header.index-header{
         transition: height 0.3s ease;
     }
     
-    .show nav {
+    .show .index-header nav {
         height: auto;
         display: block;
     }
     
-    nav ul {
+    .index-header nav ul {
         flex-direction: column;
         width: 100%;
         height: auto;
